@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head><script>
+  window.addEventListener('DOMContentLoaded', function() {
+    var logoImage = document.querySelector('.logo-image');
+
+    logoImage.addEventListener('click', function() {
+      window.open('newpage.html', '_blank');
+    });
+  });
+</script>
+</head>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+    }
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 10%;
+    }
+    
+    .scroll-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: contain;
+      z-index: -1;
+    }
+    
+    .homepage-image, .second-image {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    
+    .content {
+      margin-top: 100vh;
+      padding: 20px;
+      color: #08010100;
+    }
+  
+    .logo-image {
+      position: fixed;
+      bottom: 0;
+      left: 20px;
+      cursor: pointer;
+      z-index: 1;
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var logoImage = document.querySelector('.logo-image');
+      var mainImage = document.querySelector('.homepage-image');
+      var secondImage = document.querySelector('.second-image');
+      var isHomepageImageVisible = true;
+
+      logoImage.addEventListener('click', function() {
+        if (isHomepageImageVisible) {
+          mainImage.style.display = 'none';
+          secondImage.style.display = 'block';
+        } else {
+          mainImage.style.display = 'block';
+          secondImage.style.display = 'none';
+        }
+        isHomepageImageVisible = !isHomepageImageVisible;
+      });
+    });
+  </script>
+</head>
+<body>
+  <img src="ASSETECH (1).png" alt="ASSETECH Logo" class="logo">
+  <!-- Your website content here -->
+</body>
+<body>
+  <img src="contact.png" alt="ASSETECH Logo" class="logo-image">
+  
+  <img src="scroll.png" alt="Scroll Image" class="scroll-image">
+  <img src="background.png" alt="Homepage Image" class="homepage-image">
+  
+  <img src="second-image.png" alt="Second Image" class="second-image" style="display: none;">
+  <div class="content">
+    <!-- Your website content here -->
+  </div>
+</body>
+</html>

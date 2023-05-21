@@ -1,0 +1,123 @@
+<html>
+  
+<head>
+  <style>
+    body {
+      background-image: url("background.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-color: #000000;
+      background-attachment: fixed;
+    }
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    
+    }
+  
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 10%;
+    }
+  
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+    }
+    .scroll-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: contain;
+      z-index: -1;
+      transform: translate3d(0, 0, 0);
+    }
+    .homepage-image {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .content {
+      margin-top: 100vh;
+      padding: 20px;
+      color: #000000;
+    }
+  
+    .logo-image {
+      position: fixed;
+      bottom: 0px;
+      left: 20px;
+      
+      cursor: pointer;
+    }
+  </style>
+   <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var logoImage = document.querySelector('.ASSETECH(!)');
+      var mainImage = document.querySelector('.background');
+      var secondImage = document.querySelector('.second-image');
+
+      logoImage.addEventListener('click', function() {
+        mainImage.style.display = 'none';
+        secondImage.style.display = 'block';
+      });
+    });
+  </script>
+</head>
+<body>
+  <img src="ASSETECH (1).png" alt="ASSETECH Logo" class="logo">
+  <!-- Your website content here -->
+</body>
+<body>
+  
+  <img src="scroll.png" alt="Scroll Image" class="scroll-image">
+  <img src="background.png" alt="Homepage Image" class="homepage-image">
+  
+  <img src="second-image.png" alt="Second Image" class="second-image" style="display: none;">
+  <div class="content">
+    <!-- Your website content here -->
+  </div>
+  <img src="second-image.png" alt="Second Image" class="second-image" style="display: none;">
+  <div class="content">
+
+</body>
+    
+
+  </style>
+</head>
+<body>
+  <img src="scroll-image.jpg" alt="Scroll Image" class="scroll-image">
+  <img src="homepage-image.jpg" alt="Homepage Image" class="homepage-image">
+  <!-- Your website content here -->
+</body>
+  
+  <script>
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "F11") {
+        toggleFullScreen();
+      }
+    });
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Your website content here -->
+</body>
+</html>
